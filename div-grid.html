@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div-grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+         /* Logo grid */
+         /* The logo is the combination of a wordmark with our icon.
+         Our icon is a shorter version of our logo. Only use it if you do not have enough room for the full logo. */
+        .main-grid {
+            width: 100%;   
+            margin: 0; 
+        }
+        .grid{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .main-grid img{
+            width: 100%;
+            margin: 0;
+        }
+        /* 1 */
+        .mainlogo{
+            width: 65%;
+            background-image: url(mainlogo.png);
+            order: 1;
+            display: block;
+            float: left;
+            overflow: hidden;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        /* 2 */
+        .monologo{
+            width: 35%;
+            background-image: url(monologo.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            order: 2;
+            display: block;
+            float: left;
+        }
+        /* 3 */
+        .logovariant{   
+            width: 65%;
+            background-image: url(logovariant.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            order: 3;
+            display: block;
+            float: left;
+        }
+        /* 4 */
+        .iconlogo{
+            width: 35%;
+            background-image: url(iconlogo.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            order: 4;
+            float: left;
+            display: block;
+            overflow: hidden;
+        }
+
+        /* responsive styles */
+
+
+        /* Mobile Devices (up to 767px) */
+        @media (max-width: 767px) {
+        /* Add your CSS styles for mobile devices here */
+        /* 1 */
+        .mainlogo{
+            min-height: 200px;
+        }
+        /* 2 */
+        .monologo{
+            min-height: 200px;
+        }
+        /* 3 */
+        .logovariant{   
+            min-height: 120px;
+        }
+        /* 4 */
+        .iconlogo{
+            min-height: 120px;
+        }
+        }
+
+        /* Tablets (768px to 1023px) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+        /* Add your CSS styles for tablets here */
+        /* 1 */
+        .mainlogo{
+            min-height: 300px;
+        }
+        /* 2 */
+        .monologo{
+            min-height: 300px;
+        }
+        /* 3 */
+        .logovariant{   
+            min-height: 200px;
+        }
+        /* 4 */
+        .iconlogo{
+            min-height: 200px;
+        }
+        }
+
+        /* Laptops and Desktops (1024px to 1919px) */
+        @media (min-width: 1024px) and (max-width: 1919px) {
+        /* Add your CSS styles for laptops and desktops here */
+        /* 1 */
+        .mainlogo{
+            min-height: 400px;
+        }
+        /* 2 */
+        .monologo{
+            min-height: 400px;
+        }
+        /* 3 */
+        .logovariant{   
+            min-height: 250px;
+        }
+        /* 4 */
+        .iconlogo{
+            min-height: 250px;
+        }
+        }
+
+        /* Large Desktops (1920px to 2559px) */
+        @media (min-width: 1920px) and (max-width: 2559px) {
+        /* Add your CSS styles for large desktops here */
+        /* 1 */
+        .mainlogo{
+            min-height: 750px;
+        }
+        /* 2 */
+        .monologo{
+            min-height: 750px;
+        }
+        /* 3 */
+        .logovariant{   
+            min-height: 500px;
+        }
+        /* 4 */
+        .iconlogo{
+            min-height: 500px;
+        }
+        }
+
+        /* 2K Screens (2560px and above) */
+        @media (min-width: 2560px) {
+        /* Add your CSS styles for 2K screens here */
+        /* 1 */
+        .mainlogo{
+            min-height: 1200px;
+        }
+        /* 2 */
+        .monologo{
+            min-height: 1200px;
+        }
+        /* 3 */
+        .logovariant{   
+            min-height: 800px;
+        }
+        /* 4 */
+        .iconlogo{
+            min-height: 800px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+<div class="main-grid">
+    <div class="grid">
+    <div class="mainlogo"></div>
+    <div class="monologo"></div>
+</div>
+<div class="grid">
+    <div class="logovariant"></div>
+    <div class="iconlogo"></div>
+</div>
+</div>
+
+
+</body>
+</html>
